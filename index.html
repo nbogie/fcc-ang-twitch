@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="twitchApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Angular TwitchTV Viewer FCC Exercise</title>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='css/style.css'>
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <div class="row" ng-controller="StreamController as streamCtrl">
+            <div class="row" ng-repeat="foo in streamCtrl.foos">
+                <h1>{{foo}} - <span class="small">{{foo}}</span></h1>
+            </div>
+        </div>
+
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js'></script>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
