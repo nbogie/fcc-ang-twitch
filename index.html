@@ -29,8 +29,8 @@
             </div>
 
             <div class="row">
-                <button class="btn btn-primary" ng-click="streamCtrl.getFaves()">Get Streams!</button>
-                <button class="btn btn-primary" ng-click="streamCtrl.getForGame()">Get For Game!</button>
+               <md-button class="md-raised md-primary" ng-click="streamCtrl.getFaves()">Get Streams!</md-button>
+                <md-button class="md-raised md-primary" ng-click="streamCtrl.getForGame()">Get for Game!</md-button>
             </div>
             <div class="row" ng-repeat="stream in streamCtrl.streams">
                 <ng-include src="'stream.html'"></ng-include>
