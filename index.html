@@ -5,12 +5,29 @@
     <meta charset="UTF-8">
     <title>Angular TwitchTV Viewer FCC Exercise</title>
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
     <link rel='stylesheet' href='css/style.css'>
 </head>
 
 <body>
     <div class="container-fluid">
         <div class="row" ng-controller="StreamController as streamCtrl">
+            <!-- game select -->
+            <div class="md-padding" ng-cloak>
+                <div>
+                    <div layout="row">
+                        <md-input-container>
+                            <label>Game</label>
+                            <md-select ng-model="streamCtrl.game">
+                                <md-option ng-repeat="g in streamCtrl.possibleGames" value="{{g}}">
+                                    {{g}}
+                                </md-option>
+                            </md-select>
+                        </md-input-container>
+                    </div>
+                </div>
+            </div>
+
             <div class="row">
                 <button class="btn btn-primary" ng-click="streamCtrl.getFaves()">Get Streams!</button>
                 <button class="btn btn-primary" ng-click="streamCtrl.getForGame()">Get For Game!</button>
@@ -21,7 +38,16 @@
         </div>
 
     </div>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js'></script>
+
+    <!-- Angular Material requires Angular.js Libraries -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+
+    <!-- Angular Material Library -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+
     <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
     <script src="js/index.js"></script>
 </body>

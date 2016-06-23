@@ -6,9 +6,11 @@
 .online {
     background: #EFE;
 }
+
 .missing {
     background: #FEE;
 }
+
 .offline {
     background: #EEE;
 }
@@ -16,6 +18,7 @@
 .debug-stuff {
     display: block;
 }
+
 
 /*
 .game-and-image{
@@ -27,7 +30,10 @@ div {
 }
 */
 
+
 /* unhide this while designing layout */
+
 #master-stream-row {
     display: block;
 }
+
