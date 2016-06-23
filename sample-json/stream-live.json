@@ -1,0 +1,60 @@
+{
+    "stream": {
+        "_id": 21903571360,
+        "game": "Counter-Strike: Global Offensive",
+        "viewers": 1,
+        "created_at": "2016-06-18T02:50:38Z",
+        "video_height": 1080,
+        "average_fps": 30.9677419355,
+        "delay": 0,
+        "is_playlist": false,
+        "_links": {
+            "self": "https://api.twitch.tv/kraken/streams/blazindug"
+        },
+        "preview": {
+            "small": "https://static-cdn.jtvnw.net/previews-ttv/live_user_blazindug-80x45.jpg",
+            "medium": "https://static-cdn.jtvnw.net/previews-ttv/live_user_blazindug-320x180.jpg",
+            "large": "https://static-cdn.jtvnw.net/previews-ttv/live_user_blazindug-640x360.jpg",
+            "template": "https://static-cdn.jtvnw.net/previews-ttv/live_user_blazindug-{width}x{height}.jpg"
+        },
+        "channel": {
+            "mature": true,
+            "status": "gettin out of silver",
+            "broadcaster_language": "en",
+            "display_name": "blazindug",
+            "game": "Counter-Strike: Global Offensive",
+            "language": "en",
+            "_id": 43234804,
+            "name": "blazindug",
+            "created_at": "2013-05-05T19:22:56Z",
+            "updated_at": "2016-06-18T04:03:22Z",
+            "delay": null,
+            "logo": "https://static-cdn.jtvnw.net/jtv_user_pictures/blazindug-profile_image-c2dd68ecfc0f4414-300x300.jpeg",
+            "banner": null,
+            "video_banner": null,
+            "background": null,
+            "profile_banner": "https://static-cdn.jtvnw.net/jtv_user_pictures/blazindug-profile_banner-4a9dd51fd73f128e-480.jpeg",
+            "profile_banner_background_color": null,
+            "partner": false,
+            "url": "https://www.twitch.tv/blazindug",
+            "views": 62,
+            "followers": 0,
+            "_links": {
+                "self": "http://api.twitch.tv/kraken/channels/blazindug",
+                "follows": "http://api.twitch.tv/kraken/channels/blazindug/follows",
+                "commercial": "http://api.twitch.tv/kraken/channels/blazindug/commercial",
+                "stream_key": "http://api.twitch.tv/kraken/channels/blazindug/stream_key",
+                "chat": "http://api.twitch.tv/kraken/chat/blazindug",
+                "features": "http://api.twitch.tv/kraken/channels/blazindug/features",
+                "subscriptions": "http://api.twitch.tv/kraken/channels/blazindug/subscriptions",
+                "editors": "http://api.twitch.tv/kraken/channels/blazindug/editors",
+                "teams": "http://api.twitch.tv/kraken/channels/blazindug/teams",
+                "videos": "http://api.twitch.tv/kraken/channels/blazindug/videos"
+            }
+        }
+    },
+    "_links": {
+        "self": "https://api.twitch.tv/kraken/streams/blazindug",
+        "channel": "https://api.twitch.tv/kraken/channels/blazindug"
+    }
+}

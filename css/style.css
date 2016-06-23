@@ -1,4 +1,33 @@
-body {
-    padding: 5%;
+.logo {
+    height: 80px;
+    width: 80px;
+}
 
+.online {
+    background: #EFE;
+}
+.missing {
+    background: #FEE;
+}
+.offline {
+    background: #EEE;
+}
+
+.debug-stuff {
+    display: block;
+}
+
+/*
+.game-and-image{
+    border: 5px solid red;
+}
+
+div {
+    border: 3px dashed orange;
+}
+*/
+
+/* unhide this while designing layout */
+#master-stream-row {
+    display: block;
 }

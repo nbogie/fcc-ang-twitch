@@ -1,0 +1,120 @@
+{
+    "streams": [
+        {
+            "_id": 21911753872,
+            "game": "StarCraft II",
+            "viewers": 269,
+            "created_at": "2016-06-18T16:31:40Z",
+            "video_height": 720,
+            "average_fps": 60.3000577034,
+            "delay": 0,
+            "is_playlist": false,
+            "_links": {
+                "self": "https://api.twitch.tv/kraken/streams/ogamingsc2"
+            },
+            "preview": {
+                "small": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ogamingsc2-80x45.jpg",
+                "medium": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ogamingsc2-320x180.jpg",
+                "large": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ogamingsc2-640x360.jpg",
+                "template": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ogamingsc2-{width}x{height}.jpg"
+            },
+            "channel": {
+                "mature": false,
+                "status": "[FR] SSL - Rediffusion - Group C.",
+                "broadcaster_language": "fr",
+                "display_name": "OgamingSC2",
+                "game": "StarCraft II",
+                "language": "fr",
+                "_id": 71852806,
+                "name": "ogamingsc2",
+                "created_at": "2014-09-24T15:06:58Z",
+                "updated_at": "2016-06-19T02:03:35Z",
+                "delay": null,
+                "logo": "https://static-cdn.jtvnw.net/jtv_user_pictures/ogamingsc2-profile_image-9021dccf9399929e-300x300.jpeg",
+                "banner": null,
+                "video_banner": "https://static-cdn.jtvnw.net/jtv_user_pictures/ogamingsc2-channel_offline_image-1570cf4930177aa3-1920x1080.jpeg",
+                "background": null,
+                "profile_banner": "https://static-cdn.jtvnw.net/jtv_user_pictures/ogamingsc2-profile_banner-d418aed2c0ef7d35-480.jpeg",
+                "profile_banner_background_color": null,
+                "partner": true,
+                "url": "https://www.twitch.tv/ogamingsc2",
+                "views": 17437159,
+                "followers": 36597,
+                "_links": {
+                    "self": "http://api.twitch.tv/kraken/channels/ogamingsc2",
+                    "follows": "http://api.twitch.tv/kraken/channels/ogamingsc2/follows",
+                    "commercial": "http://api.twitch.tv/kraken/channels/ogamingsc2/commercial",
+                    "stream_key": "http://api.twitch.tv/kraken/channels/ogamingsc2/stream_key",
+                    "chat": "http://api.twitch.tv/kraken/chat/ogamingsc2",
+                    "features": "http://api.twitch.tv/kraken/channels/ogamingsc2/features",
+                    "subscriptions": "http://api.twitch.tv/kraken/channels/ogamingsc2/subscriptions",
+                    "editors": "http://api.twitch.tv/kraken/channels/ogamingsc2/editors",
+                    "teams": "http://api.twitch.tv/kraken/channels/ogamingsc2/teams",
+                    "videos": "http://api.twitch.tv/kraken/channels/ogamingsc2/videos"
+                }
+            }
+        },
+        {
+            "_id": 21919914672,
+            "game": "StarCraft II",
+            "viewers": 168,
+            "created_at": "2016-06-19T02:13:45Z",
+            "video_height": 720,
+            "average_fps": 50,
+            "delay": 0,
+            "is_playlist": false,
+            "_links": {
+                "self": "https://api.twitch.tv/kraken/streams/esl_sc2"
+            },
+            "preview": {
+                "small": "https://static-cdn.jtvnw.net/previews-ttv/live_user_esl_sc2-80x45.jpg",
+                "medium": "https://static-cdn.jtvnw.net/previews-ttv/live_user_esl_sc2-320x180.jpg",
+                "large": "https://static-cdn.jtvnw.net/previews-ttv/live_user_esl_sc2-640x360.jpg",
+                "template": "https://static-cdn.jtvnw.net/previews-ttv/live_user_esl_sc2-{width}x{height}.jpg"
+            },
+            "channel": {
+                "mature": false,
+                "status": "RERUN: First vs. ForGG (PvT) - IEM 2014 San Jose - EU Qualifier - LB Round 2 Match B - StarCraft 2",
+                "broadcaster_language": "en",
+                "display_name": "ESL_SC2",
+                "game": "StarCraft II",
+                "language": "en",
+                "_id": 30220059,
+                "name": "esl_sc2",
+                "created_at": "2012-05-02T09:59:20Z",
+                "updated_at": "2016-06-19T02:13:21Z",
+                "delay": null,
+                "logo": "https://static-cdn.jtvnw.net/jtv_user_pictures/esl_sc2-profile_image-d6db9488cec97125-300x300.jpeg",
+                "banner": null,
+                "video_banner": "https://static-cdn.jtvnw.net/jtv_user_pictures/esl_sc2-channel_offline_image-5a8657f8393c9d85-1920x1080.jpeg",
+                "background": null,
+                "profile_banner": "https://static-cdn.jtvnw.net/jtv_user_pictures/esl_sc2-profile_banner-f8295b33d1846e75-480.jpeg",
+                "profile_banner_background_color": "#050506",
+                "partner": true,
+                "url": "https://www.twitch.tv/esl_sc2",
+                "views": 58519896,
+                "followers": 131948,
+                "_links": {
+                    "self": "http://api.twitch.tv/kraken/channels/esl_sc2",
+                    "follows": "http://api.twitch.tv/kraken/channels/esl_sc2/follows",
+                    "commercial": "http://api.twitch.tv/kraken/channels/esl_sc2/commercial",
+                    "stream_key": "http://api.twitch.tv/kraken/channels/esl_sc2/stream_key",
+                    "chat": "http://api.twitch.tv/kraken/chat/esl_sc2",
+                    "features": "http://api.twitch.tv/kraken/channels/esl_sc2/features",
+                    "subscriptions": "http://api.twitch.tv/kraken/channels/esl_sc2/subscriptions",
+                    "editors": "http://api.twitch.tv/kraken/channels/esl_sc2/editors",
+                    "teams": "http://api.twitch.tv/kraken/channels/esl_sc2/teams",
+                    "videos": "http://api.twitch.tv/kraken/channels/esl_sc2/videos"
+                }
+            }
+        }
+    ],
+    "_total": 2,
+    "_links": {
+        "self": "https://api.twitch.tv/kraken/streams?channel=esl_sc2%2Cfreecodecamp%2Ccomster404%2Cogamingsc2&limit=25&offset=0",
+        "next": "https://api.twitch.tv/kraken/streams?channel=esl_sc2%2Cfreecodecamp%2Ccomster404%2Cogamingsc2&limit=25&offset=25",
+        "featured": "https://api.twitch.tv/kraken/streams/featured",
+        "summary": "https://api.twitch.tv/kraken/streams/summary",
+        "followed": "https://api.twitch.tv/kraken/streams/followed"
+    }
+}
