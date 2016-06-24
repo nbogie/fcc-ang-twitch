@@ -12,13 +12,16 @@
 </head>
 
 <body class='container-fluid'>
+    <div class="row text-center col-md-6 col-md-offset-3" ng-controller="StreamController as streamCtrl">
 
-    <div class="row" ng-controller="StreamController as streamCtrl">
+        <div class="headline row">
+            <h1>Twitch.TV - Who's streaming?</h1>
+        </div>
 
         <div class="row">
             <!-- controls row -->
 
-            <div class="col-md-3">
+            <div class="col-md-6">
                 <select id='gameSelect' class='form-control' ng-model="streamCtrl.game">
                     <option ng-repeat="g in streamCtrl.possibleGames" value="{{g}}">
                         {{g}}
@@ -27,8 +30,8 @@
             </div>
 
             <button-group>
-                <button class="btn btn-primary" ng-click="streamCtrl.getFaves()">Get Faves!</button>
                 <button class="btn btn-primary" ng-click="streamCtrl.getForGame()">Get for Game!</button>
+                <button class="btn btn-primary" ng-click="streamCtrl.getFaves()">Get Faves!</button>
             </button-group>
 
         </div>
