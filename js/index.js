@@ -46,8 +46,11 @@
         };
 
         var getGames = function () {
-            //$.getJSON('https://api.twitch.tv/kraken/games/top?limit=30', function (data) {
-            $http.get('/sample-json/games.json').then(function (response) {
+            var gamesURLs = {
+                'real': 'https://api.twitch.tv/kraken/games/top?limit=30',
+                'local': '/sample-json/games.json'
+            };
+            $http.get(gamesURLs.real).then(function (response) {
                 var names = response.data.top.map(function (g) {
                     return g.game.name;
                 });
