@@ -9,49 +9,32 @@
     <link rel='stylesheet' href='css/style.css'>
 </head>
 
-<body layout="column">
+<body class='container-fluid'>
 
-    <!-- Container #1 (see wireframe) -->
-    <md-toolbar layout="row">
-        <h1>Twitch TV - Angular App</h1>
-    </md-toolbar>
+    <div class='row'>
 
-    <div flex layout="row">
-        <md-content flex id="content">
-
-            <div class="row" ng-controller="StreamController as streamCtrl">
-                <!-- game select -->
-                <div class="md-padding" ng-cloak>
-                    <div>
-                        <div layout="row">
-                            <md-input-container>
-                                <label>Game</label>
-                                <md-select ng-model="streamCtrl.game">
-                                    <md-option ng-repeat="g in streamCtrl.possibleGames" value="{{g}}">
-                                        {{g}}
-                                    </md-option>
-                                </md-select>
-                            </md-input-container>
-                        </div>
-                    </div>
+        <div class="row" ng-controller="StreamController as streamCtrl">
+            <div class="row">
+                <div class="col-xs-3">
+                    <select id='gameSelect' class='form-control' ng-model="streamCtrl.game">
+                        <option ng-repeat="g in streamCtrl.possibleGames" value="{{g}}">
+                            {{g}}
+                        </option>
+                    </select>
                 </div>
-
-                <div class="row">
-                    <md-button class="md-raised md-primary" ng-click="streamCtrl.getFaves()">Get Streams!</md-button>
-                    <md-button class="md-raised md-primary" ng-click="streamCtrl.getForGame()">Get for Game!</md-button>
-                </div>
-
-                <md-content id='master-stream-row' class='stream-row well row'>
-                    <md-list>
-
-                        <md-list-item class="md-3-line" ng-repeat="stream in streamCtrl.streams">
-                            <ng-include src="'stream.html'"></ng-include>
-                        </md-list-item>
-                    </md-list>
-                </md-content>
-
+                <button class="btn btn-primary" ng-click="streamCtrl.getFaves()">Get Streams!</button>
+                <button class="btn btn-primary" ng-click="streamCtrl.getForGame()">Get for Game!</button>
             </div>
-        </md-content>
+
+            <div id='master-stream-row' class='stream-row well row'>
+                <ul>
+                    <div class='row' ng-repeat="stream in streamCtrl.streams">
+                        <ng-include src="'stream.html'"></ng-include>
+                    </div>
+                </ul>
+            </div>
+
+        </div>
     </div>
 
     <!-- Angular Material requires Angular.js Libraries -->
