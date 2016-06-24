@@ -5,7 +5,7 @@
     /*global $ */
     /*global console */
 
-    var app = angular.module('twitchApp', ['ngMaterial']);
+    var app = angular.module('twitchApp', []);
 
     app.controller('StreamController', function ($http) {
 
