@@ -10,32 +10,29 @@
 
 <body class='container-fluid'>
 
-    <div class='row'>
-
-        <div class="row" ng-controller="StreamController as streamCtrl">
-            <div class="row">
-                <div class="col-md-3">
-                    <select id='gameSelect' class='form-control' ng-model="streamCtrl.game">
-                        <option ng-repeat="g in streamCtrl.possibleGames" value="{{g}}">
-                            {{g}}
-                        </option>
-                    </select>
-                </div>
-                <button-group>
-                    <button class="btn btn-primary" ng-click="streamCtrl.getFaves()">Get Streams!</button>
-                    <button class="btn btn-primary" ng-click="streamCtrl.getForGame()">Get for Game!</button>
-                </button-group>
+    <div class="row" ng-controller="StreamController as streamCtrl">
+        <div class="row">
+            <div class="col-md-3">
+                <select id='gameSelect' class='form-control' ng-model="streamCtrl.game">
+                    <option ng-repeat="g in streamCtrl.possibleGames" value="{{g}}">
+                        {{g}}
+                    </option>
+                </select>
             </div>
-
-            <div id='master-stream-row' class='stream-row well row'>
-                <ul>
-                    <div class='row' ng-repeat="stream in streamCtrl.streams">
-                        <ng-include src="'stream.html'"></ng-include>
-                    </div>
-                </ul>
-            </div>
-
+            <button-group>
+                <button class="btn btn-primary" ng-click="streamCtrl.getFaves()">Get Streams!</button>
+                <button class="btn btn-primary" ng-click="streamCtrl.getForGame()">Get for Game!</button>
+            </button-group>
         </div>
+
+        <div id='master-stream-row' class='stream-row well row'>
+            <ul>
+                <div class='row' ng-repeat="stream in streamCtrl.streams">
+                    <ng-include src="'stream.html'"></ng-include>
+                </div>
+            </ul>
+        </div>
+
     </div>
 
     <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
