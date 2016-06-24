@@ -33,7 +33,7 @@
             }
         };
 
-        var getFaves = function () {
+        this.getFaves = function () {
             $http.get('https://api.twitch.tv/kraken/streams/?', {
                 'params': {
                     'channel': channelNameList.join(',')
