@@ -29,12 +29,21 @@
             </div>
 
             <div class="row">
-               <md-button class="md-raised md-primary" ng-click="streamCtrl.getFaves()">Get Streams!</md-button>
+                <md-button class="md-raised md-primary" ng-click="streamCtrl.getFaves()">Get Streams!</md-button>
                 <md-button class="md-raised md-primary" ng-click="streamCtrl.getForGame()">Get for Game!</md-button>
             </div>
-            <div class="row" ng-repeat="stream in streamCtrl.streams">
-                <ng-include src="'stream.html'"></ng-include>
-            </div>
+
+            <md-content id='master-stream-row' class='stream-row well row'>
+                <md-list>
+
+                    <md-list-item class="md-3-line" ng-repeat="stream in streamCtrl.streams">
+                        <ng-include src="'stream.html'"></ng-include>
+                    </md-list-item>
+
+
+                </md-list>
+            </md-content>
+
         </div>
 
     </div>
