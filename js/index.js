@@ -7,7 +7,7 @@
 
     var app = angular.module('twitchApp', ['ngMaterial']);
 
-    app.controller('StreamController', function () {
+    app.controller('StreamController', function ($http) {
 
         var channelNameList = ['esl_sc2', 'freecodecamp', 'comster404', 'habathcx', 'ogamingsc2'];
 
@@ -18,43 +18,45 @@
         var that = this;
 
         this.getForGame = function () {
-            console.log('get for game, and ' + that.game );
             if (that.game !== '-') {
-                $.getJSON('https://api.twitch.tv/kraken/streams/?', {
+                console.log('Requesting streams for game: ' + that.game);
+
+                $http.get('https://api.twitch.tv/kraken/streams/?', {
+                    'params': {
                         'game': that.game,
                         'limit': 8
-                    },
-                    function (data) {
-                        console.log(JSON.stringify(data, null, 2));
-                        that.streams = data.streams;
-                    });
+                    }
+                }).then(function (response) {
+                    console.log('assigning streams from response: ');
+                    that.streams = response.data.streams;
+                });
             }
         };
 
         var getFaves = function () {
-            $.getJSON('https://api.twitch.tv/kraken/streams/?', {
+            $http.get('https://api.twitch.tv/kraken/streams/?', {
+                'params': {
                     'channel': channelNameList.join(',')
-                },
-                function (data) {
-                    //get others: (data, channelNameList);
-                    that.streams = data;
-                    //console.log('retrieved ' + that.streams.length + ' streams from json');
                 }
-            );
+            }).then(function (response) {
+                //get others: (data, channelNameList);
+                that.streams = response.data;
+                //console.log('retrieved ' + that.streams.length + ' streams from json');
+            });
         };
 
         var getGames = function () {
             //$.getJSON('https://api.twitch.tv/kraken/games/top?limit=30', function (data) {
-            $.getJSON('sample-json/games.json', function (data) {
-                var names = data.top.map(function (g) {
+            $http.get('/sample-json/games.json').then(function (response) {
+                var names = response.data.top.map(function (g) {
                     return g.game.name;
                 });
-                console.log("game names: "+ names);
+                console.log("game names: " + names);
                 that.possibleGames = names;
             });
         };
 
         getGames();
-//        getForGame();
+        //        getForGame();
     }); // ends controller
 }()); //ends the wrapping IIFE
