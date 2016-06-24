@@ -24,6 +24,12 @@
     display: block;
 }
 
+.logo-container {
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
 
 /*
 .game-and-image{
@@ -42,3 +48,8 @@ div {
     display: block;
 }
 
+div{
+    /*
+    border: 1px solid black;
+    */
+}
