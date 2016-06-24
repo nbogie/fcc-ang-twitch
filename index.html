@@ -32,7 +32,7 @@
         <div id='master-stream-row' class='stream-row well row'>
             <ul>
                 <div class='row' ng-repeat="stream in streamCtrl.streams">
-                    <ng-include src="'stream.html'"></ng-include>
+                    <ng-include src="'stream.html?nd='+Date.now()"></ng-include>
                 </div>
             </ul>
         </div>
